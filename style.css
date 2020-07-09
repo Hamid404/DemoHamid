@@ -1,0 +1,77 @@
+/* Äußere Flexbox */
+.container {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid blue;
+    justify-content: space-around;
+}
+
+/* Jede Karte als ein Flexitem */
+.card {
+    border: 2px solid red;
+    padding: 10px;
+    flex-basis: 15%;
+    background-color: slategray;
+    margin: 20px;
+    box-shadow: tomato 5px 5px;
+}
+
+/* Styling von Rahmen um Bild */
+.imageWrapper {
+  border: yellowgreen 2px solid;
+  background-color: darkgrey;
+}
+/* Styling um Bild */
+img {
+    width: 100%;
+}
+/* Styling um den Text */
+.textWrapper {
+    background-color: darkcyan;
+    padding: 10px;
+    text-align: center;
+}
+/* Styling von text */
+h3 {
+    font-family: monospace; 
+    font-size: 15px;
+}
+/* Media queries mit orientation portrait*/
+@media (max-width: 601px) and ( orientation:portrait ) {
+body {
+    background-color: aquamarine;
+}
+.container {
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.card {
+    background-color: chartreuse;
+}
+}
+
+
+
+/* Media queries mit orientation landscape*/
+
+@media (max-width: 601px) and ( orientation:landscape ) {
+    body {
+        background-color: aquamarine;
+    }
+    .container {
+        background-color: blueviolet;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .card {
+        background-color: crimson;
+    }
+    .imageWrapper {
+        background-color: darkslateblue;
+    }
+    }
+    
+    
